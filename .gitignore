@@ -1,0 +1,6 @@
+# compiled binaries
+a.out
+*.o
+
+# contains plaintext credentials — do not commit
+how-to-conn

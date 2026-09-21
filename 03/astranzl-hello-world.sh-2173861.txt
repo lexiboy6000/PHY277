@@ -1,0 +1,9 @@
++ date
+Sun Sep 13 08:21:49 PM EDT 2026
++ pwd
+/gpfs/home/astranzl/PHY277/03
++ hostname -f
+dn009.cm.cluster
++ echo 'hello world'
+hello world
++ exit

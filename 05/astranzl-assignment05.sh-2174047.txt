@@ -1,0 +1,22 @@
++ date
+Sun Sep 13 09:22:24 PM EDT 2026
++ pwd
+/gpfs/home/astranzl/PHY277/05
++ hostname -f
+dn009.cm.cluster
++ cat helloWorld05.cc
+
+
+#include <iostream> 
+
+int main() {
+
+	std::cout << "Hello World" << std::endl;
+	return 0;
+
+
+}
++ g++ helloWorld05.cc
++ ./a.out
+Hello World
++ exit

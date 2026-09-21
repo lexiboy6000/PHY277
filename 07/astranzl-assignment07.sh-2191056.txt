@@ -1,0 +1,23 @@
++ date
+Sun Sep 20 05:17:53 PM EDT 2026
++ hostname -f
+dn002.cm.cluster
++ cat 07.cc
+#include <iostream>
+
+
+int main(){
+
+	std::string name = "Lex"; //this is really just a  pointer aswell
+	std::string id = "117178139";
+
+	std::cout << name << " " << id << std::endl;
+
+
+
+	return 0;
+}
++ g++ 07.cc
++ ./a.out
+Lex 117178139
++ exit

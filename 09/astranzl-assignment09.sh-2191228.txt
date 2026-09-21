@@ -1,0 +1,35 @@
++ date
+Sun Sep 20 05:32:11 PM EDT 2026
++ hostname -f
+dn002.cm.cluster
++ cat 09.cc
+#include <stdio.h>
+
+
+int main(){
+
+	float f = 0;
+	double d = 0;
+
+	for(int i=0;i<100;i++) f += 0.01;
+	for(int i=0;i<100;i++) d += 0.01;
+
+	printf("f = %lf\n", f);
+	printf("d = %lf\n", d);
+
+	printf(" d-f = %lf\n", (d-(double)f));
+
+
+
+	return 0;
+}
++ g++ 09.cc
++ ./a.out
+f = 0.999999
+d = 1.000000
+ d-f = 0.000001
++ echo '\n differencce because float is smaller than double. In a float, first bit is sign, next 8 bits are the exponant, remaining are precision bits. In a double, the formate is first for sign, next 11 for exponant, the remaining 52 for precision.'
+\n differencce because float is smaller than double. In a float, first bit is sign, next 8 bits are the exponant, remaining are precision bits. In a double, the formate is first for sign, next 11 for exponant, the remaining 52 for precision.
++ echo 'Notabl and importantly, twos compliment is NOT used for the exponant terms but ratherits value is given by the 11 bit value minus 1023 .... for a float it is ofcourse minus 127.'
+Notabl and importantly, twos compliment is NOT used for the exponant terms but ratherits value is given by the 11 bit value minus 1023 .... for a float it is ofcourse minus 127.
++ exit

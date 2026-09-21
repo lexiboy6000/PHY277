@@ -1,0 +1,8 @@
+//idk what i am supposed to put in here but apparently we have to submit a file? i made the proper directories but idk how to submit
+
+
+int main(){
+
+	void* assignment-text-file = NULL;
+	return 0;
+}

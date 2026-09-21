@@ -1,0 +1,7 @@
+
+
+for just one file do  --- scp astranzl@milan:/file /where-to-put-dir
+
+for whole directory doe --- scp -r astranzl@milan:/directory /where-to-put-dir
+
+for only copying what changed -- rsync -avz anstranzl@milan:/directory ./results/

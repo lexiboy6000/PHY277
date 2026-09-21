@@ -1,0 +1,37 @@
++ date
+Thu Sep 17 11:07:26 PM EDT 2026
++ pwd
+/gpfs/home/astranzl/PHY277/06
++ hostname -f
+dn026.cm.cluster
++ echo 'hello world, my name is astranzl'
+hello world, my name is astranzl
++ cat make_ints.cc
+#include <stdio.h>
+
+
+int main(){
+	
+	int var1 = 42; // 4 bytes (8 bits per byte addressable memory) 
+	short int var2 = 64; // 2 bytes
+
+	printf("sizeof int = %d \n", sizeof(var1));
+	printf("sizeof short int = %d \n", sizeof(var2));
+
+	printf("address of int = %p \n",&var1);
+	printf("address of short int = %p \n",&var2);
+
+	//nothing wrong with using addresses / pointers. every time you make a array you are technecally making a pointer. 
+	//interesting how computer selects where to store upon declaring, idk what goes on underneath, but it seems to go backwards, using the stack high address for the first variable and then going backwards
+	
+
+
+	return 0; 
+}
++ g++ make_ints.cc
++ ./a.out
+sizeof int = 4 
+sizeof short int = 2 
+address of int = 0x7fffffffc83c 
+address of short int = 0x7fffffffc83a 
++ exit
